@@ -15,6 +15,7 @@ namespace NSE
         public Form1()
         {
             InitializeComponent();
+            tabControl1.TabPages.Add(new NSETAB());
         }
     }
 }
