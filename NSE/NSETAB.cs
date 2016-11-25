@@ -21,7 +21,7 @@ namespace NSE
         {
             tabTextBox = new Scintilla();
             Text = "New";
-
+            
             this.tabTextBox.Dock = DockStyle.Fill;
             this.tabTextBox.Location = new Point(0, 0);
             this.tabTextBox.Name = "tabTextBox";
@@ -49,6 +49,10 @@ namespace NSE
             this.tabTextBox.Margins[0].Width = 15;
             InitializeComponent();
             Controls.Add(tabTextBox);
+        }
+        public void fileSave(string fileName) {
+
+
         }
     }
 }

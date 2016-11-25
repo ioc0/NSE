@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tsmNewTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmOpenFIle = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +48,15 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmNewTab,
+            this.tsmOpenFIle});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
             // tabControl1
             // 
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -55,12 +66,6 @@
             this.tabControl1.Size = new System.Drawing.Size(914, 569);
             this.tabControl1.TabIndex = 1;
             // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -69,6 +74,24 @@
             this.statusStrip1.Size = new System.Drawing.Size(914, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tsmNewTab
+            // 
+            this.tsmNewTab.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsmNewTab.Name = "tsmNewTab";
+            this.tsmNewTab.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.tsmNewTab.Size = new System.Drawing.Size(200, 26);
+            this.tsmNewTab.Text = "New Tab";
+            this.tsmNewTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tsmNewTab.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // tsmOpenFIle
+            // 
+            this.tsmOpenFIle.Name = "tsmOpenFIle";
+            this.tsmOpenFIle.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.tsmOpenFIle.Size = new System.Drawing.Size(200, 26);
+            this.tsmOpenFIle.Text = "Open File";
+            this.tsmOpenFIle.Click += new System.EventHandler(this.tsmOpenFIle_Click);
             // 
             // Form1
             // 
@@ -92,6 +115,8 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripMenuItem tsmNewTab;
+        private System.Windows.Forms.ToolStripMenuItem tsmOpenFIle;
 
         #endregion
 
