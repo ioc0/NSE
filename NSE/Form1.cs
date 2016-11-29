@@ -35,7 +35,16 @@ namespace NSE
                 fileName = ofd.FileName;
             }
             var curTabs = tabControl1.SelectedTab as NSETAB;
-            NSETAB.fileSave(fileName);
+            try
+            {
+                curTabs.LoadDataFromFile(fileName);
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+            
             
         }
         
